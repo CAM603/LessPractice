@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+    background-color: @green;
+    .flex();
+
+    .nav_left {
+        width: 50%;
+        .flex(row wrap, space-between, center);
+
+        .logo {
+            background-image: url(../img/weed.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 25%;
+        }
+
+        .navigation {
+            .flex(row wrap, space-between, center);
+            width: 75%;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .nav_right {
+        width: 50%;
+        .flex(row wrap, flex-end, center);
+
+        button {
+            margin-right: 20px;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+    }
+}

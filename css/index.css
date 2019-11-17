@@ -160,3 +160,50 @@ p {
   line-height: 1.5;
   font-size: 1rem;
 }
+a {
+  font-size: 2rem;
+}
+header {
+  width: 100%;
+  background-color: #86ee60;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .nav_left {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav_left .logo {
+  background-image: url(../img/weed.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 25%;
+}
+header .nav_left .navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+header .nav_left .navigation a {
+  text-decoration: none;
+}
+header .nav_right {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .nav_right button {
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 1rem;
+}
