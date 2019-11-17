@@ -8,3 +8,19 @@
 	justify-content: @j-content;
 	align-items: @a-items;
 }
+
+// Buttons
+
+.button() {
+    padding: 10px;
+    border-radius: 1rem;
+    color: @dark;
+    background: @light;
+    transition: 500ms;
+    outline: none;
+    border: solid @light 2px;
+    &:hover {
+        color: @light;
+        background: @dark;
+    }
+}
