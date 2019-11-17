@@ -187,6 +187,12 @@ header .nav_left {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .nav_left {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
 header .nav_left .logo {
   background-image: url(../img/weed.png);
   background-size: contain;
@@ -212,6 +218,15 @@ header .nav_right {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .nav_right {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 header .nav_right button {
   margin-right: 20px;
   padding: 10px;
@@ -226,6 +241,12 @@ header .nav_right button:hover {
   color: #f4f7ed;
   background: #2b3752;
 }
+@media (max-width: 500px) {
+  header .nav_right button {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+}
 .hero {
   width: 100%;
   height: 50vh;
@@ -238,12 +259,23 @@ header .nav_right button:hover {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .hero {
+    height: 50vh;
+  }
+}
 .hero .hero_content {
   width: 50%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .hero .hero_content {
+    width: 100%;
+    margin-top: 100px;
+  }
 }
 .hero .hero_content h2 {
   text-align: center;

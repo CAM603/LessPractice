@@ -8,6 +8,10 @@ header {
     .nav_left {
         width: 50%;
         .flex(row wrap, space-between, center);
+        @media @mobile {
+            width: 100%;
+            margin-right: 10px;
+        }
 
         .logo {
             background-image: url(../img/weed.png);
@@ -31,10 +35,19 @@ header {
     .nav_right {
         width: 50%;
         .flex(row wrap, flex-end, center);
+        @media @mobile {
+            width: 100%;
+            .flex();
+        }
 
         button {
             margin-right: 20px;
             .button();
+
+            @media @mobile {
+                margin-bottom: 10px;
+                width: 80%;
+            }
         }
     }
 }
