@@ -145,27 +145,36 @@ h5 {
   font-family: 'Kanit', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 h4 {
   font-size: 1.5rem;
 }
 p {
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 a {
   font-size: 2rem;
 }
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7ed;
+}
 header {
   width: 100%;
   background-color: #86ee60;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -194,6 +203,7 @@ header .nav_left .navigation {
 }
 header .nav_left .navigation a {
   text-decoration: none;
+  color: #2b3752;
 }
 header .nav_right {
   width: 50%;
@@ -264,4 +274,27 @@ header .nav_right button:hover {
 .hero .hero_content .button_group button:hover {
   color: #f4f7ed;
   background: #2b3752;
+}
+.strains {
+  background-color: #f4f7ed;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+}
+.strains .strains_content {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.strains .strains_content figure {
+  height: 70%;
+  width: 90%;
+  background-color: #86ee60;
 }

@@ -1,6 +1,8 @@
 header {
     width: 100%;
     background-color: @green;
+    position: fixed;
+    top: 0;
     .flex();
 
     .nav_left {
@@ -21,9 +23,11 @@ header {
 
             a {
                 text-decoration: none;
+                color: @dark;
             }
         }
     }
+
     .nav_right {
         width: 50%;
         .flex(row wrap, flex-end, center);
