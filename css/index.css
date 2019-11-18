@@ -308,25 +308,22 @@ header .nav_right button:hover {
   background: #2b3752;
 }
 .strains {
+  width: 90%;
   background-color: #f4f7ed;
-  width: 100%;
   max-width: 1000px;
-  height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: space-around;
+  overflow: auto;
+  white-space: nowrap;
 }
 .strains .strains_content {
-  width: 300px;
+  width: 33%;
   height: 300px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
 }
 .strains .strains_content figure {
-  height: 70%;
-  width: 90%;
-  background-color: #86ee60;
+  height: 250px;
+  background-image: url('../img/weed.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

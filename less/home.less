@@ -40,21 +40,26 @@
     }
 }
 .strains {
+    width: 90%;
     background-color: @light;
-    width: 100%;
     max-width: 1000px;
-    height: 100%;
-    .flex(row wrap, center, space-around);
+    overflow: auto;
+    white-space: nowrap;
+    
+    
 
     .strains_content {
-        width: 300px;
+        width: 33%;
         height: 300px;
-        .flex();
-
+        display: inline-block;
+        text-align: center;
+        
         figure {
-            height: 70%;
-            width: 90%;
-            background-color: @green;
+            height: 250px;
+            background-image: url('../img/weed.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
 }
